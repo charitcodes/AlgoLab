@@ -1,0 +1,318 @@
+
+.prim-page {
+  min-height: 100vh;
+  padding: 28px;
+  color: #f1f0ff;
+  background: #0b0b18;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.prim-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 38px;
+}
+
+.prim-back,
+.prim-dashboard {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #d9d5ff;
+  background: #17172b;
+  border: 1px solid #30304d;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.prim-tag {
+  color: #b8a9ff;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
+.prim-heading {
+  max-width: 750px;
+  margin-bottom: 28px;
+}
+
+.prim-eyebrow {
+  color: #a78bfa;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.prim-heading h1 {
+  margin: 8px 0;
+  font-size: clamp(30px, 4vw, 44px);
+  letter-spacing: -1.5px;
+}
+
+.prim-heading > p:last-child,
+.prim-card-heading p {
+  color: #9999b7;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.prim-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.9fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.prim-graph-card,
+.prim-info-card {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid #292941;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #151527, #10101f);
+}
+
+.prim-card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.prim-card-heading h2,
+.prim-info-card h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.prim-card-heading p {
+  margin-bottom: 0;
+}
+
+.prim-counter {
+  padding: 7px 10px;
+  border-radius: 8px;
+  color: #c4b5fd;
+  background: #292044;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.prim-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 24px 0 12px;
+  overflow: visible;
+}
+
+.prim-edge {
+  stroke: #45445f;
+  stroke-width: 2.5;
+  transition: stroke 0.25s, stroke-width 0.25s;
+}
+
+.prim-edge.selected {
+  stroke: #a78bfa;
+  stroke-width: 4;
+}
+
+.prim-weight {
+  fill: #c2c1d9;
+  font-size: 13px;
+  text-anchor: middle;
+  paint-order: stroke;
+  stroke: #151527;
+  stroke-width: 5px;
+  stroke-linejoin: round;
+}
+
+.prim-node {
+  fill: #25253c;
+  stroke: #666584;
+  stroke-width: 2;
+  transition: fill 0.25s, stroke 0.25s;
+}
+
+.prim-node.visited {
+  fill: #563c91;
+  stroke: #c4b5fd;
+}
+
+.prim-node-label {
+  fill: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.prim-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  color: #aaa9c4;
+  font-size: 12px;
+}
+
+.prim-legend span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.prim-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #45445f;
+}
+
+.prim-dot.active {
+  background: #a78bfa;
+}
+
+.prim-info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.prim-info-card h2 {
+  margin-top: 8px;
+}
+
+.prim-message {
+  min-height: 58px;
+  color: #aaa9c4;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.prim-stat {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #292941;
+  color: #aaa9c4;
+  font-size: 13px;
+}
+
+.prim-stat strong {
+  color: #f1f0ff;
+}
+
+.prim-total {
+  margin: 20px 0;
+  padding: 17px;
+  border: 1px solid #51417c;
+  border-radius: 12px;
+  background: #211b35;
+}
+
+.prim-total span,
+.prim-total strong {
+  display: block;
+}
+
+.prim-total span {
+  color: #c4b5fd;
+  font-size: 12px;
+}
+
+.prim-total strong {
+  margin-top: 7px;
+  font-size: 32px;
+}
+
+.prim-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.prim-actions button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 11px 8px;
+  border: 0;
+  border-radius: 9px;
+  background: #8b5cf6;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.prim-actions button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.prim-actions .prim-reset {
+  color: #d8d5ef;
+  background: #292941;
+}
+
+.prim-dashboard {
+  margin-top: 12px;
+  width: 100%;
+}
+
+.prim-complexity {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.prim-complexity > div {
+  padding: 17px;
+  border: 1px solid #292941;
+  border-radius: 13px;
+  background: #131324;
+}
+
+.prim-complexity span,
+.prim-complexity strong {
+  display: block;
+}
+
+.prim-complexity span {
+  color: #9999b7;
+  font-size: 12px;
+}
+
+.prim-complexity strong {
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+@media (max-width: 800px) {
+  .prim-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .prim-page {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .prim-complexity {
+    grid-template-columns: 1fr;
+  }
+
+  .prim-graph-card,
+  .prim-info-card {
+    padding: 15px;
+  }
+
+  .prim-tag {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,275 @@
+
+.fw-page {
+  min-height: 100vh;
+  padding: 28px;
+  color: #f1f0ff;
+  background: #0b0b18;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.fw-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 38px;
+}
+
+.fw-back,
+.fw-dashboard {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  color: #d9d5ff;
+  background: #17172b;
+  border: 1px solid #30304d;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.fw-tag {
+  color: #b8a9ff;
+  font-size: 12px;
+  letter-spacing: 1.4px;
+}
+
+.fw-heading {
+  max-width: 760px;
+  margin-bottom: 28px;
+}
+
+.fw-eyebrow {
+  color: #a78bfa;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+}
+
+.fw-heading h1 {
+  margin: 8px 0;
+  font-size: clamp(28px, 4vw, 44px);
+  letter-spacing: -1.3px;
+}
+
+.fw-heading > p:last-child,
+.fw-card-top p {
+  color: #9999b7;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.fw-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(270px, 0.85fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.fw-card {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid #292941;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #151527, #10101f);
+}
+
+.fw-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.fw-card-top h2,
+.fw-side h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.fw-card-top p {
+  margin-bottom: 0;
+}
+
+.fw-counter {
+  padding: 7px 10px;
+  color: #c4b5fd;
+  background: #292044;
+  border-radius: 8px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.fw-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin: 26px 0 18px;
+}
+
+.fw-table {
+  width: 100%;
+  min-width: 300px;
+  border-collapse: separate;
+  border-spacing: 7px;
+  text-align: center;
+}
+
+.fw-table th {
+  padding: 10px 6px;
+  color: #aaa9c4;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.fw-table td {
+  padding: 15px 8px;
+  color: #e7e5ff;
+  background: #202037;
+  border: 1px solid #30304d;
+  border-radius: 9px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.fw-table td.fw-diagonal {
+  color: #d8b4fe;
+  background: #302344;
+  border-color: #5b3d78;
+}
+
+.fw-table td.fw-reachable {
+  color: #c4b5fd;
+  background: #24213c;
+}
+
+.fw-note {
+  padding: 13px;
+  color: #bcb9d6;
+  background: #19192c;
+  border: 1px solid #30304d;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.fw-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.fw-side h2 {
+  margin-top: 8px;
+}
+
+.fw-description {
+  min-height: 65px;
+  color: #aaa9c4;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.fw-stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid #292941;
+  color: #aaa9c4;
+  font-size: 13px;
+}
+
+.fw-stat strong {
+  color: #f1f0ff;
+}
+
+.fw-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.fw-actions button {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 11px 8px;
+  color: white;
+  background: #8b5cf6;
+  border: 0;
+  border-radius: 9px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fw-actions button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.fw-actions .fw-reset {
+  color: #d8d5ef;
+  background: #292941;
+}
+
+.fw-dashboard {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.fw-complexity {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.fw-complexity > div {
+  padding: 17px;
+  background: #131324;
+  border: 1px solid #292941;
+  border-radius: 13px;
+}
+
+.fw-complexity span,
+.fw-complexity strong {
+  display: block;
+}
+
+.fw-complexity span {
+  color: #9999b7;
+  font-size: 12px;
+}
+
+.fw-complexity strong {
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+@media (max-width: 800px) {
+  .fw-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .fw-page {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fw-complexity {
+    grid-template-columns: 1fr;
+  }
+
+  .fw-card {
+    padding: 15px;
+  }
+
+  .fw-tag {
+    font-size: 9px;
+  }
+}
